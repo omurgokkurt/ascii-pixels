@@ -3,6 +3,12 @@ https://github.com/omurgokkurt/ascii-pixels/
 convert text files into pixels and vice versa
 
 ## usage:
+Pillow is required to run the code:
+``` 
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+```
+
 >$python3 ascii_pixels.py [mode] [input] [output]  
  
 mode=t for text to image
