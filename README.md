@@ -13,11 +13,11 @@ python3 -m pip install --upgrade Pillow
  
 mode=t for text to image
 ``` 
-$python3 t input.txt output.png
+$python3 ascii_pixels.py t input.txt output.png
 ```
 mode=i for image to text
 ``` 
-$python3 i input.png output.txt
+$python3 ascii_pixels.py i input.png output.txt
 ```
 
 ## example output:  
