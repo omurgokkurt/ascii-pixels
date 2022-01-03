@@ -4,11 +4,6 @@ import os
 import unicodedata
 import sys
 
-# Usage:
-# $python3 ascii_pixels.py [mode] [input] [output]
-# modes: t -> text to image, i -> image to text
-# example: $python3 t input.txt output.png
-
 
 color_encode = {'red': [1, 0, 0], 'green': [0, 1, 0], 'blue': [0, 0, 1], 'magenta': [1, 0, 1], 'none': [0, 0, 0]}
 
