@@ -4,7 +4,6 @@ import os
 import unicodedata
 import sys
 
-
 color_encode = {'red': [1, 0, 0], 'green': [0, 1, 0], 'blue': [0, 0, 1], 'magenta': [1, 0, 1], 'none': [0, 0, 0]}
 
 
@@ -56,6 +55,8 @@ def convert_to_image(text_file, save_as='result', size=1, color='none'):
     if os.path.isfile(text_file):
         file.close()
     # img.show()
+    img.putalpha(254)
+
     img.save(save_as + '.png')
 
 
@@ -68,7 +69,7 @@ def convert_to_text(image_path, save_as, color='none'):
     count = 0
     for y in range(height):
         for x in range(width):
-            for i in img.getpixel((x, y)):
+            for i in img.getpixel((x, y))[:3]:
                 text += chr(i-120*color_encode[color][count % 3])
                 count += 1
     file.write(text)
