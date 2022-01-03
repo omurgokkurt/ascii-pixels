@@ -8,8 +8,6 @@ Pillow is required to run the code:
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade Pillow
 ```
->ascii_pixels.py uses R G B values to store 3 characters  
->ascii_pixels_alpha.py uses additional alpha value (RGBA) to store 4 characters  
  
 mode=t for text to image
 ``` 
